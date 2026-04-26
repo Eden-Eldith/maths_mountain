@@ -36,6 +36,62 @@ python mountains.py
 
 Generates `mountains.png` (2000×1200) in the current directory. Takes roughly 40 seconds on a modern CPU.
 
+## Terminal Output
+```
+Setting up coordinate grids...
+Computing fractal envelope E(x,y)...
+  E: 10/50
+  E: 20/50
+  E: 30/50
+  E: 40/50
+  E: 50/50
+  E range: [-6.97, 7.94]
+Computing mountain shapes J_s...
+Computing occlusion Z_s...
+Computing R, T, B, A...
+Computing C...
+  R: [0.0000, 0.8643]
+  T: [0.0000, 1.7021]
+  B: [-1.5708, 1.5708]
+  C: [0.0000, 0.9899]
+Computing lighting K_v...
+  K_0: 10/50
+  K_0: 20/50
+  K_0: 30/50
+  K_0: 40/50
+  K_0: 50/50
+  K_0 range: [0.0568, 3.6864]
+  K_1: 10/50
+  K_1: 20/50
+  K_1: 30/50
+  K_1: 40/50
+  K_1: 50/50
+  K_1 range: [0.0567, 3.6864]
+  K_2: 10/50
+  K_2: 20/50
+  K_2: 30/50
+  K_2: 40/50
+  K_2: 50/50
+  K_2 range: [0.0566, 3.6864]
+Computing sky S...
+Computing color channels H_v...
+  lighting: [0.0000, 0.9999]
+  H_0: [0.0977, 1.1548]
+  H_1: [0.1038, 1.1674]
+  H_2: [0.1527, 1.3539]
+C:\Users\pcobr\Downloads\maths_mountain\generate_mountains.py:158: DeprecationWarning: 'mode' parameter is deprecated and will be removed in Pillow 13 (2026-10-15)
+  Image.fromarray(debug_img, 'RGB').save(debug_path)
+Saved raw H debug image to mountains_raw_H.png
+Applying color compression F...
+
+Rendering complete in 47.4 seconds
+C:\Users\pcobr\Downloads\maths_mountain\generate_mountains.py:184: DeprecationWarning: 'mode' parameter is deprecated and will be removed in Pillow 13 (2026-10-15)
+  Image.fromarray(img, 'RGB').save(out_path)
+Saved to mountains.png
+
+C:\Users\pcobr\Downloads\maths_mountain>
+```
+
 ## Credits
 
 - **[Hamid Naderi Yeganeh](https://x.com/naderi_yeganeh)** — Original mathematical artist and creator of the mountain formulas
